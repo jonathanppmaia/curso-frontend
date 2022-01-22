@@ -1,0 +1,191 @@
+/* Importando CSS de Tabelas */
+@import url('tabela.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 62.5%; /*Equivalente a 10px*/
+}
+
+body {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  background: #eee;
+  padding: 10px;
+}
+
+form div {
+  background: #fff;
+  border-bottom: 1px solid #33f;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #66f;
+}
+
+input {
+  padding: 1rem;
+}
+
+[type='text'],
+[type='email'],
+textarea,
+label {
+  display: block;
+  width: 100%;
+}
+
+header {
+  background-color: rgb(58, 57, 57);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 02px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+article ul {
+  padding-left: 40px;
+}
+
+section::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+/*cria um Círculo*/
+#grafico-01 {
+  background-color: brown;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#grafico-01 img {
+  width: 100%;
+}
+
+#grafico-02 {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 60px 0 260px 120px;
+  border-color: transparent transparent transparent rgb(18, 22, 240);
+  width: 60px;
+}
+
+#imagemvetorial {
+  width: 200px;
+}
+
+#canvas {
+  height: 300px;
+  width: 300px;
+}
+
+/* FIltros */
+
+#grafico-01 {
+  filter: drop-shadow(8px px 10px #333);
+  max-width: 100%;
+  height: auto;
+}
+
+.filtro {
+  filter: grayscale(100%); /*escala de cinza */
+  filter: sepia(100%); /*Efeito Sépia*/
+  filter: blur(5px); /* Desfoquq*/
+  filter: brightness(50%); /* Brilho 100%=normal*/
+  filter: invert(100%); /*inversão de cores*/
+  filter: opacity(50%);
+  filter: saturate(120%) sepia(100%); /*COmbina filtros separados por espaço */
+}
+
+.filtro:hover {
+  filter: sepia(0%);
+  filter: blur(5px);
+}
+
+.coluna {
+  display: block;
+  width: 50%;
+  float: left;
+  padding: 5px;
+  background: #eee;
+  border: 1px solid #333;
+}
+
+.coluna03 {
+  columns: 100px 2;
+  width: 50%;
+}
+
+.coluna-100w {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* Mobile Firts */
+
+@media (max-width:"425px") {
+
+  .coluna {
+    width: 100%;
+  }
+  
+}
+

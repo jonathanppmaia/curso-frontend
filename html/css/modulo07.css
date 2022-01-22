@@ -1,0 +1,162 @@
+/* Importando CSS de Tabelas */
+@import url('tabela.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #333333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: #454545;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  
+}
+
+header h2 {
+  font-weight: 100;
+  padding: 1.0rem;
+}
+
+/* Regras apenas para os que forem filhos imediatamente (FILHO DIRETO)*/
+header > h2 {
+  font-weight: 600;
+;
+}
+h2 + p {
+  background: #ff0;
+  color: #333;
+}
+
+h2 ~ h5 {
+  font-size: 1.2rem;
+}
+/* que vem na sequência
+div + p {
+  text-transform: uppercase;
+}*/
+
+/* Para alterar de maneira geral*/
+div ~ p {
+  text-transform: uppercase;
+}
+
+/* Pseudo - Elementos: */
+a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  height: 2rem;
+}
+
+a:visited {
+  background: #f00;
+}
+
+a:active {
+  color: #0f0;
+}
+
+a:hover {
+  color: #009;
+  background: eee;
+}
+
+h2:hover {
+  color: rgb(236, 233, 14);
+}
+/*
+
+
+Tipografia
+
+*/
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  letter-spacing: 0.01rem;
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  padding-left: 1.5;
+}
+
+h3 {
+  font: italic bold 1.2rem/2 sans-serif;
+}
+
+/*
+
+
+Cores
+
+*/
+
+body {
+  background: url(/image/matrix.png) center top no-repeat #000000;
+}
+
+body {
+  background: url(/image/pattern.png) center top repeat #eeeeee;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+p {
+  color: blue;
+  color: #034589;
+}
+
+header,
+Footer {
+  background-color: #034589;
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+}
+
+.navegacao {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.navegacao li a {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+  background-color: rgba(150red, 150, 200, 0.5);
+  color: #333333;
+}
+
+.lista {
+  padding: 2rem;
+}

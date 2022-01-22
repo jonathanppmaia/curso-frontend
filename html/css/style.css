@@ -1,0 +1,254 @@
+/* Importando CSS de Tabelas */
+@import url('/css/tabela.css');
+
+/* Arquivo CSS com estilo dos elementos de todas as páginas*/
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 62.5%; /* equivalente a 10px*/
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #454545;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* Style the header */
+#primeiro-link a {
+  color: #fff;
+}
+
+ul {
+  padding: 2px;
+  font-size: 20px;
+}
+
+ul li {
+  font-size: 0.8em; /* equivalente a 16px*/
+
+  padding: 2px;
+}
+
+p {
+  font-size: 1.6rem; /* equivalente a 16px*/
+}
+
+h2 {
+  font-size: 2rem; /* equivalente a 20 px */
+  font-size: 40px;
+}
+h3 {
+  font-size: 1.6rem;
+}
+
+.navegacao {
+  background-color: transparent;
+  display: block;
+}
+
+form div {
+  background-color: rgb(247, 246, 246);
+  border: 0px dashed #999;
+  border-bottom: 1px solid #33f;
+  margin: 1rem 2rem;
+  margin-bottom: 0;
+  padding: 2rem;
+}
+
+[type='text'],
+[type='email'],
+[for='mensagem'],
+textarea {
+  width: 100%;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #33f;
+}
+
+select {
+  width: 20%;
+}
+
+header {
+  display: inline-block;
+  background-color: purple;
+  background-image: linear-gradient(
+    45deg,
+    rgb(117, 172, 255),
+    rgb(206, 56, 156),
+    purple
+  );
+  width: 100%;
+  height: 100px;
+}
+
+header img {
+  float: left;
+  padding: 25px;
+}
+
+header h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 31px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+section {
+  width: 100%;
+  border-radius: 80%;
+}
+
+nav {
+  float: left;/* muda a regra da quebra de linha*/
+  width: 20%;
+  height: 100vh;
+  color: #ffffff;
+  background: rgb(117, 172, 255);
+  padding: 20px;
+  display: block;
+}
+
+/* Style the list inside the menu */
+.navegacao li {
+  list-style-type: none;
+  padding: 0;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+.redessociais {
+  padding-top: 10px;
+}
+
+.socialmedia {
+  display: flex;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+article {
+  float: right;
+  padding: 20px;
+  width: 80%;
+  background-color: #ffffff;
+}
+
+#articletext {
+  text-align: center;
+}
+
+article li {
+  list-style-type: none;
+}
+#grafico-redondo {
+  background-color: brown;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+article img {
+  width: 200px;
+}
+#citacao {
+  width: 600px;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 1.5;
+  margin: auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: rgb(204, 204, 204);
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(192, 240, 255);
+  background-image: linear-gradient(
+    45deg,
+    rgb(117, 172, 255),
+    rgb(206, 56, 156),
+    purple
+  );
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin: 0%;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*
+  top (cima
+  bottom/ inferior (baixo)
+  left (esquerda)
+  right (direita)
+*/
+
+form div {
+  position: static;
+  position: relative;
+  margin-top: 10px;
+}
+label {
+  position: absolute;
+  top: 5px;
+  margin: 0;
+}
+
