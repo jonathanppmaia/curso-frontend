@@ -34,7 +34,8 @@ git clone https://github.com/jonathanppmaia/curso-frontend.git
 Informação de alteração
    - após testado todo seu código
    - após testado todo seu código
-   -git commit -m "mensagem"
+   - git commit -m "mensagem"
+   - git push (enviar alterações para o repositório)
 
 ## Gitflow
 
