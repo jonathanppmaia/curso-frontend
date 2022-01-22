@@ -41,3 +41,16 @@ Informação de alteração
 ## Gitflow
 
 Fluxo de Git
+
+
+### Branchs
+são ramificações / Versões paralelas
+
+    - main / master (vai para a produção, quando o projeto é publicado)
+    -develop
+    dod dEFINITION OF dONE: cRITÉRIOS DE ACEITE
+    -VERSIONAMENTO 1.0.0
+
+    ### Merge
+    Mescal de brahcs
+
